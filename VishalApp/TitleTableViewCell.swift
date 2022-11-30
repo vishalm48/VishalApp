@@ -75,7 +75,7 @@ class TitleTableViewCell: UITableViewCell {
             return
         }
 
-        titlesPosterUIImageView.sd_setImage(with: url,completed: nil)
+        titlesPosterUIImageView.kf.setImage(with: url)
         titleLabel.text =  model.titleName
     }
        
