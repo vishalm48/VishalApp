@@ -1,0 +1,6 @@
+framework module Pods_VishalApp {
+  umbrella header "Pods-VishalApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0509DBB262E4FAE284D77811 /* Pods_VishalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DF903FF55F749CDC8621C /* Pods_VishalApp.framework */; };
+		45963C63292C927E00BD2D4D /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45963C62292C927E00BD2D4D /* TitleTableViewCell.swift */; };
+		45963C65292C980900BD2D4D /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45963C64292C980900BD2D4D /* TitleViewModel.swift */; };
+		45963C67292CAF2F00BD2D4D /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45963C66292CAF2F00BD2D4D /* SearchResultsViewController.swift */; };
+		45963C6B292CEFF700BD2D4D /* YoutubeSearchRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45963C6A292CEFF700BD2D4D /* YoutubeSearchRespose.swift */; };
+		45BFDADB292B53DB0017172C /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAD1292B53D90017172C /* APICaller.swift */; };
+		45BFDADC292B53DB0017172C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAD2292B53DA0017172C /* MainTabBarViewController.swift */; };
+		45BFDADD292B53DB0017172C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAD4292B53DA0017172C /* AppDelegate.swift */; };
+		45BFDADE292B53DB0017172C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAD5292B53DA0017172C /* SceneDelegate.swift */; };
+		45BFDADF292B53DB0017172C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45BFDAD7292B53DA0017172C /* Assets.xcassets */; };
+		45BFDAE0292B53DB0017172C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BFDAD8292B53DA0017172C /* LaunchScreen.storyboard */; };
+		45BFDAE5292B545A0017172C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAE1292B545A0017172C /* SearchViewController.swift */; };
+		45BFDAE6292B545A0017172C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAE2292B545A0017172C /* HomeViewController.swift */; };
+		45BFDAE7292B545A0017172C /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAE3292B545A0017172C /* UpcomingViewController.swift */; };
+		45BFDAE8292B545A0017172C /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAE4292B545A0017172C /* DownloadViewController.swift */; };
+		45BFDAEB292B54690017172C /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAE9292B54680017172C /* HeroHeaderUIView.swift */; };
+		45BFDAEC292B54690017172C /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAEA292B54680017172C /* CollectionViewTableViewCell.swift */; };
+		45BFDAEF292B79990017172C /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAEE292B79990017172C /* Title.swift */; };
+		45BFDAF1292B80450017172C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAF0292B80450017172C /* Extensions.swift */; };
+		45BFDAF5292B926F0017172C /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFDAF4292B926F0017172C /* TitleCollectionViewCell.swift */; };
+		45BFDAF8292B9A8A0017172C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 45BFDAF7292B9A8A0017172C /* SDWebImage */; };
+		45BFDAFA292B9A8A0017172C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BFDAF9292B9A8A0017172C /* SDWebImageMapKit */; };
+		45CF2164292DD5B000770D71 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF2163292DD5B000770D71 /* TitlePreviewViewController.swift */; };
+		45CF2166292DDC1B00770D71 /* TItlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF2165292DDC1B00770D71 /* TItlePreviewViewModel.swift */; };
+		CA49197A292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA491978292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld */; };
+		CA49197C292F2BC900AAA51E /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49197B292F2BC900AAA51E /* DataPersistenceManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CACE6C5A2934847700133787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACE6C552934847700133787 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3F44C782D64D7EB20B61CE3844EBFAD;
+			remoteInfo = Kingfisher;
+		};
+		CACE6C5C2934847700133787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACE6C552934847700133787 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A0E057F652F8194CD6D112188F2A27C;
+			remoteInfo = "Pods-VishalApp";
+		};
+		CACE6C63293484A500133787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACE6C5E293484A500133787 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3F44C782D64D7EB20B61CE3844EBFAD;
+			remoteInfo = Kingfisher;
+		};
+		CACE6C65293484A500133787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACE6C5E293484A500133787 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A0E057F652F8194CD6D112188F2A27C;
+			remoteInfo = "Pods-VishalApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		454DF903FF55F749CDC8621C /* Pods_VishalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VishalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45963C62292C927E00BD2D4D /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleTableViewCell.swift; path = ../../../TitleTableViewCell.swift; sourceTree = "<group>"; };
+		45963C64292C980900BD2D4D /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		45963C66292CAF2F00BD2D4D /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		45963C6A292CEFF700BD2D4D /* YoutubeSearchRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchRespose.swift; sourceTree = "<group>"; };
+		45BFDAB7292B533B0017172C /* VishalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VishalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45BFDAC8292B533D0017172C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45BFDAD1292B53D90017172C /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		45BFDAD2292B53DA0017172C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		45BFDAD4292B53DA0017172C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45BFDAD5292B53DA0017172C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45BFDAD7292B53DA0017172C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45BFDAD8292B53DA0017172C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45BFDAE1292B545A0017172C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		45BFDAE2292B545A0017172C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45BFDAE3292B545A0017172C /* UpcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		45BFDAE4292B545A0017172C /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		45BFDAE9292B54680017172C /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		45BFDAEA292B54680017172C /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		45BFDAED292B570D0017172C /* VishalApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VishalApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		45BFDAEE292B79990017172C /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		45BFDAF0292B80450017172C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		45BFDAF4292B926F0017172C /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleCollectionViewCell.swift; path = ../../../TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		45CF2163292DD5B000770D71 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitlePreviewViewController.swift; path = ../../../../../vishal/TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		45CF2165292DDC1B00770D71 /* TItlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TItlePreviewViewModel.swift; sourceTree = "<group>"; };
+		81086DE88714EA22BC1C88F4 /* Pods-VishalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VishalApp.release.xcconfig"; path = "Target Support Files/Pods-VishalApp/Pods-VishalApp.release.xcconfig"; sourceTree = "<group>"; };
+		AB5E5877D842B17EC5A40E82 /* Pods-VishalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VishalApp.debug.xcconfig"; path = "Target Support Files/Pods-VishalApp/Pods-VishalApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA491979292F27F800AAA51E /* NetflixCloneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetflixCloneModel.xcdatamodel; sourceTree = "<group>"; };
+		CA49197B292F2BC900AAA51E /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		CACE6C552934847700133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CACE6C5E293484A500133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45BFDAB4292B533B0017172C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BFDAFA292B9A8A0017172C /* SDWebImageMapKit in Frameworks */,
+				45BFDAF8292B9A8A0017172C /* SDWebImage in Frameworks */,
+				0509DBB262E4FAE284D77811 /* Pods_VishalApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45963C68292CB89200BD2D4D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				45BFDAE2292B545A0017172C /* HomeViewController.swift */,
+				45BFDAE3292B545A0017172C /* UpcomingViewController.swift */,
+				45BFDAE1292B545A0017172C /* SearchViewController.swift */,
+				45BFDAE4292B545A0017172C /* DownloadViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		45963C69292CB91100BD2D4D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				45963C66292CAF2F00BD2D4D /* SearchResultsViewController.swift */,
+				45CF2163292DD5B000770D71 /* TitlePreviewViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		45BFDAAE292B533B0017172C = {
+			isa = PBXGroup;
+			children = (
+				CACE6C5E293484A500133787 /* Pods.xcodeproj */,
+				45BFDAD0292B53D90017172C /* Managers */,
+				45BFDAB9292B533B0017172C /* VishalApp */,
+				45BFDAB8292B533B0017172C /* Products */,
+				D4FE723FFF2CD79F774BFFB7 /* Pods */,
+				C657089BB85EDC1CDD19F831 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45BFDAB8292B533B0017172C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45BFDAB7292B533B0017172C /* VishalApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45BFDAB9292B533B0017172C /* VishalApp */ = {
+			isa = PBXGroup;
+			children = (
+				45BFDAD1292B53D90017172C /* APICaller.swift */,
+				CA49197B292F2BC900AAA51E /* DataPersistenceManager.swift */,
+				45BFDAD3292B53DA0017172C /* Resources */,
+				45BFDADA292B53DB0017172C /* Models */,
+				45BFDAD6292B53DA0017172C /* Views */,
+				45BFDAD9292B53DB0017172C /* ViewModels */,
+				45BFDACF292B53D90017172C /* Controllers */,
+				45BFDAD2292B53DA0017172C /* MainTabBarViewController.swift */,
+				45BFDAD4292B53DA0017172C /* AppDelegate.swift */,
+				45BFDAD5292B53DA0017172C /* SceneDelegate.swift */,
+				45BFDAD7292B53DA0017172C /* Assets.xcassets */,
+				45BFDAD8292B53DA0017172C /* LaunchScreen.storyboard */,
+				45BFDAC8292B533D0017172C /* Info.plist */,
+				45BFDAED292B570D0017172C /* VishalApp-Bridging-Header.h */,
+				CA491978292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld */,
+			);
+			path = VishalApp;
+			sourceTree = "<group>";
+		};
+		45BFDACF292B53D90017172C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45963C69292CB91100BD2D4D /* General */,
+				45963C68292CB89200BD2D4D /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		45BFDAD0292B53D90017172C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		45BFDAD3292B53DA0017172C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CACE6C552934847700133787 /* Pods.xcodeproj */,
+				45BFDAF0292B80450017172C /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45BFDAD6292B53DA0017172C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45BFDAEA292B54680017172C /* CollectionViewTableViewCell.swift */,
+				45BFDAE9292B54680017172C /* HeroHeaderUIView.swift */,
+				45BFDAF4292B926F0017172C /* TitleCollectionViewCell.swift */,
+				45963C62292C927E00BD2D4D /* TitleTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45BFDAD9292B53DB0017172C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				45963C64292C980900BD2D4D /* TitleViewModel.swift */,
+				45CF2165292DDC1B00770D71 /* TItlePreviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		45BFDADA292B53DB0017172C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45BFDAEE292B79990017172C /* Title.swift */,
+				45963C6A292CEFF700BD2D4D /* YoutubeSearchRespose.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C657089BB85EDC1CDD19F831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454DF903FF55F749CDC8621C /* Pods_VishalApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CACE6C562934847700133787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CACE6C5B2934847700133787 /* Kingfisher */,
+				CACE6C5D2934847700133787 /* Pods-VishalApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CACE6C5F293484A500133787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CACE6C64293484A500133787 /* Kingfisher */,
+				CACE6C66293484A500133787 /* Pods-VishalApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4FE723FFF2CD79F774BFFB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB5E5877D842B17EC5A40E82 /* Pods-VishalApp.debug.xcconfig */,
+				81086DE88714EA22BC1C88F4 /* Pods-VishalApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45BFDAB6292B533B0017172C /* VishalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45BFDACB292B533D0017172C /* Build configuration list for PBXNativeTarget "VishalApp" */;
+			buildPhases = (
+				936D570325C6CD1AD33BC3CD /* [CP] Check Pods Manifest.lock */,
+				45BFDAB3292B533B0017172C /* Sources */,
+				45BFDAB4292B533B0017172C /* Frameworks */,
+				45BFDAB5292B533B0017172C /* Resources */,
+				97437AE964C9ECCB86BD9CEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VishalApp;
+			packageProductDependencies = (
+				45BFDAF7292B9A8A0017172C /* SDWebImage */,
+				45BFDAF9292B9A8A0017172C /* SDWebImageMapKit */,
+			);
+			productName = VishalApp;
+			productReference = 45BFDAB7292B533B0017172C /* VishalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45BFDAAF292B533B0017172C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					45BFDAB6292B533B0017172C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = 45BFDAB2292B533B0017172C /* Build configuration list for PBXProject "VishalApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45BFDAAE292B533B0017172C;
+			packageReferences = (
+				45BFDAF6292B9A8A0017172C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 45BFDAB8292B533B0017172C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CACE6C5F293484A500133787 /* Products */;
+					ProjectRef = CACE6C5E293484A500133787 /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = CACE6C562934847700133787 /* Products */;
+					ProjectRef = CACE6C552934847700133787 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				45BFDAB6292B533B0017172C /* VishalApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CACE6C5B2934847700133787 /* Kingfisher */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Kingfisher;
+			path = Kingfisher.framework;
+			remoteRef = CACE6C5A2934847700133787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CACE6C5D2934847700133787 /* Pods-VishalApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-VishalApp";
+			path = Pods_VishalApp.framework;
+			remoteRef = CACE6C5C2934847700133787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CACE6C64293484A500133787 /* Kingfisher */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Kingfisher;
+			path = Kingfisher.framework;
+			remoteRef = CACE6C63293484A500133787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CACE6C66293484A500133787 /* Pods-VishalApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-VishalApp";
+			path = Pods_VishalApp.framework;
+			remoteRef = CACE6C65293484A500133787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45BFDAB5292B533B0017172C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BFDADF292B53DB0017172C /* Assets.xcassets in Resources */,
+				45BFDAE0292B53DB0017172C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		936D570325C6CD1AD33BC3CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VishalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97437AE964C9ECCB86BD9CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VishalApp/Pods-VishalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VishalApp/Pods-VishalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VishalApp/Pods-VishalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45BFDAB3292B533B0017172C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45963C63292C927E00BD2D4D /* TitleTableViewCell.swift in Sources */,
+				45CF2166292DDC1B00770D71 /* TItlePreviewViewModel.swift in Sources */,
+				45BFDAEC292B54690017172C /* CollectionViewTableViewCell.swift in Sources */,
+				CA49197C292F2BC900AAA51E /* DataPersistenceManager.swift in Sources */,
+				45BFDAF5292B926F0017172C /* TitleCollectionViewCell.swift in Sources */,
+				45BFDAE5292B545A0017172C /* SearchViewController.swift in Sources */,
+				45BFDADD292B53DB0017172C /* AppDelegate.swift in Sources */,
+				CA49197A292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld in Sources */,
+				45BFDADB292B53DB0017172C /* APICaller.swift in Sources */,
+				45BFDAEB292B54690017172C /* HeroHeaderUIView.swift in Sources */,
+				45BFDADC292B53DB0017172C /* MainTabBarViewController.swift in Sources */,
+				45BFDADE292B53DB0017172C /* SceneDelegate.swift in Sources */,
+				45963C67292CAF2F00BD2D4D /* SearchResultsViewController.swift in Sources */,
+				45BFDAF1292B80450017172C /* Extensions.swift in Sources */,
+				45BFDAE7292B545A0017172C /* UpcomingViewController.swift in Sources */,
+				45BFDAE8292B545A0017172C /* DownloadViewController.swift in Sources */,
+				45BFDAEF292B79990017172C /* Title.swift in Sources */,
+				45CF2164292DD5B000770D71 /* TitlePreviewViewController.swift in Sources */,
+				45BFDAE6292B545A0017172C /* HomeViewController.swift in Sources */,
+				45963C6B292CEFF700BD2D4D /* YoutubeSearchRespose.swift in Sources */,
+				45963C65292C980900BD2D4D /* TitleViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45BFDAC9292B533D0017172C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45BFDACA292B533D0017172C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45BFDACC292B533D0017172C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5E5877D842B17EC5A40E82 /* Pods-VishalApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75RR6C6GMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VishalApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.VishalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VishalApp/VishalApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45BFDACD292B533D0017172C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81086DE88714EA22BC1C88F4 /* Pods-VishalApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75RR6C6GMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VishalApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.VishalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VishalApp/VishalApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45BFDAB2292B533B0017172C /* Build configuration list for PBXProject "VishalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BFDAC9292B533D0017172C /* Debug */,
+				45BFDACA292B533D0017172C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45BFDACB292B533D0017172C /* Build configuration list for PBXNativeTarget "VishalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BFDACC292B533D0017172C /* Debug */,
+				45BFDACD292B533D0017172C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45BFDAF6292B9A8A0017172C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45BFDAF7292B9A8A0017172C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45BFDAF6292B9A8A0017172C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		45BFDAF9292B9A8A0017172C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45BFDAF6292B9A8A0017172C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CA491978292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA491979292F27F800AAA51E /* NetflixCloneModel.xcdatamodel */,
+			);
+			currentVersion = CA491979292F27F800AAA51E /* NetflixCloneModel.xcdatamodel */;
+			path = NetflixCloneModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45BFDAAF292B533B0017172C /* Project object */;
+}
