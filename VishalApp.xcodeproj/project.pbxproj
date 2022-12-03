@@ -34,9 +34,9 @@
 		CA8464092938BD2F00D7B64B /* ClassForProfileCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8464082938BD2E00D7B64B /* ClassForProfileCells.swift */; };
 		CA84640B2938BD4800D7B64B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84640A2938BD4700D7B64B /* NavigationBarView.swift */; };
 		CA84640D2938C67700D7B64B /* LoginClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84640C2938C67700D7B64B /* LoginClass.swift */; };
-		CAA4D2EE29372F2300F24137 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4D2ED29372F2300F24137 /* TitleTableViewCell.swift */; };
 		CAA4D2F629372F8500F24137 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4D2F529372F8500F24137 /* TitleCollectionViewCell.swift */; };
 		CAA4D2F829372FDB00F24137 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4D2F729372FDB00F24137 /* TitlePreviewViewController.swift */; };
+		CAE3B1122939CB4000DE2BD5 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,11 +101,11 @@
 		CA8464082938BD2E00D7B64B /* ClassForProfileCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassForProfileCells.swift; sourceTree = "<group>"; };
 		CA84640A2938BD4700D7B64B /* NavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		CA84640C2938C67700D7B64B /* LoginClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClass.swift; sourceTree = "<group>"; };
-		CAA4D2ED29372F2300F24137 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleTableViewCell.swift; path = VishalApp/TitleTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		CAA4D2F529372F8500F24137 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAA4D2F729372FDB00F24137 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		CACE6C552934847700133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CACE6C5E293484A500133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +208,7 @@
 				45BFDAEA292B54680017172C /* CollectionViewTableViewCell.swift */,
 				45BFDAE9292B54680017172C /* HeroHeaderUIView.swift */,
 				CAA4D2F529372F8500F24137 /* TitleCollectionViewCell.swift */,
-				CAA4D2ED29372F2300F24137 /* TitleTableViewCell.swift */,
+				CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */,
 				CA84640C2938C67700D7B64B /* LoginClass.swift */,
 			);
 			path = Views;
@@ -438,6 +438,7 @@
 			files = (
 				45CF2166292DDC1B00770D71 /* TItlePreviewViewModel.swift in Sources */,
 				45BFDAEC292B54690017172C /* CollectionViewTableViewCell.swift in Sources */,
+				CAE3B1122939CB4000DE2BD5 /* TitleTableViewCell.swift in Sources */,
 				CA84640B2938BD4800D7B64B /* NavigationBarView.swift in Sources */,
 				CA49197C292F2BC900AAA51E /* DataPersistenceManager.swift in Sources */,
 				CA8464092938BD2F00D7B64B /* ClassForProfileCells.swift in Sources */,
@@ -454,7 +455,6 @@
 				45BFDADE292B53DB0017172C /* SceneDelegate.swift in Sources */,
 				45963C67292CAF2F00BD2D4D /* SearchResultsViewController.swift in Sources */,
 				45BFDAF1292B80450017172C /* Extensions.swift in Sources */,
-				CAA4D2EE29372F2300F24137 /* TitleTableViewCell.swift in Sources */,
 				45BFDAE7292B545A0017172C /* UpcomingViewController.swift in Sources */,
 				45BFDAE8292B545A0017172C /* DownloadViewController.swift in Sources */,
 				45BFDAEF292B79990017172C /* Title.swift in Sources */,
