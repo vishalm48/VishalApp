@@ -65,12 +65,12 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource{
         let e : String = "Logout"
         
           if(a.caseInsensitiveCompare(b) == .orderedSame){
-              let vc = ClassForProfileCells()
+              let vc = MyProfileClass()
               self.navigationController?.pushViewController(vc, animated: true)
           }
         
         if(a.caseInsensitiveCompare(c) == .orderedSame){
-            let vc = ClassForProfileCells()
+            let vc = DownloadViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

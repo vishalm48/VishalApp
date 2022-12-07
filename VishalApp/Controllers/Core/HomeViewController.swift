@@ -149,7 +149,7 @@ extension HomeViewController :  UITableViewDelegate, UITableViewDataSource{
                             print(error.localizedDescription)
                     }
                 }
-                
+
             case Sections.TopRated.rawValue:
                 
                 APICaller.shared.getTopRated{ result in
@@ -160,13 +160,13 @@ extension HomeViewController :  UITableViewDelegate, UITableViewDataSource{
                             print(error.localizedDescription)
                     }
                 }
-                
+            
             default:
                 return UITableViewCell()
         }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
