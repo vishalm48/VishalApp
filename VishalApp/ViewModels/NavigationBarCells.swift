@@ -10,7 +10,8 @@ import UIKit
 class NavigationBarCells: UITableViewCell {
  
     static let identifier = "NavigationBarCells"
-
+  
+    
 //    var cellTextProfile:String?
 //    
 //    @IBOutlet weak var imageIcon: UIImageView!

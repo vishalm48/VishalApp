@@ -70,4 +70,7 @@ extension MyProfileClass:UINavigationControllerDelegate,UIImagePickerControllerD
         myImage.image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         self.dismiss(animated: true,completion: nil)
     }
+    
+    
+    
 }

@@ -8,9 +8,8 @@
 import UIKit
 
 class NavigationBarView: UIViewController {
-
-  public var cellTextInProfile:[String] = ["My Profile","MyVideos","Log in","Logout"]
-    
+   
+  public var cellTextInProfile:[String] = ["My Profile","MyVideos"]
     private let profileTable:UITableView = {
         
         let table = UITableView()
@@ -28,8 +27,9 @@ class NavigationBarView: UIViewController {
         
         view.addSubview(profileTable)
         profileTable.delegate = self
-        profileTable.dataSource =  self
+        profileTable.dataSource = self
         
+        dataLog()
     }
     
     override func viewDidLayoutSubviews() {
@@ -39,7 +39,13 @@ class NavigationBarView: UIViewController {
   
     }
 
-extension NavigationBarView:UITableViewDelegate,UITableViewDataSource{
+extension NavigationBarView:UITableViewDelegate,UITableViewDataSource,protocolForLogin{
+    func log(dataLog: String) {
+        print(dataLog)
+    }
+    
+   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellTextInProfile.count
     }
@@ -52,9 +58,22 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource{
         cell?.backgroundColor = .cyan
         cell?.textLabel?.text = cellTextInProfile[indexPath.row]
         cell?.textLabel?.font = .boldSystemFont(ofSize: 16)
-//
+        
+        
 //        cell?.cellTextProfile = cellTextInProfile[indexPath.row]
         return cell!
+    }
+    
+    func dataLog(){
+        
+        if LoginClass.isLoggedIn == true {
+            cellTextInProfile.append("Log Out")
+            UserDefaults.
+        }else{
+            cellTextInProfile.append("Log In")
+        }
+        
+        profileTable.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -62,8 +81,7 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource{
         let b : String = "My Profile"
         let c : String = "MyVideos"
         let d : String = "Log in"
-        let e : String = "Logout"
-        
+        let e : String = "Log Out"
           if(a.caseInsensitiveCompare(b) == .orderedSame){
               let vc = MyProfileClass()
               self.navigationController?.pushViewController(vc, animated: true)
@@ -82,9 +100,12 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource{
         }
         
         if(a.caseInsensitiveCompare(e) == .orderedSame){
-            let vc = ClassForProfileCells()
+      
+            let vc = LogOutClassViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+           
         }
+        
     }
     
 }

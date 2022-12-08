@@ -6,8 +6,14 @@
 //
 
 import UIKit
+protocol protocolForLogin{
+    func log(dataLog:String)
+}
+
 
 class LoginClass: UIViewController {
+    
+    static var isLoggedIn:Bool?
     
     let topView: UIView = {
             let view = UIView()
@@ -16,11 +22,14 @@ class LoginClass: UIViewController {
             return view
         }()
     
+    var delegate:protocolForLogin!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupTopView()
         setupTextFields()
+    
               }
     
     func setupTopView() {
@@ -45,18 +54,18 @@ class LoginClass: UIViewController {
             
         }()
         
-        let usernameTextField: UITextField = {
-            let textField = UITextField()
-            textField.translatesAutoresizingMaskIntoConstraints = false
-            textField.placeholder = "Username"
-            textField.borderStyle = .roundedRect
-            textField.backgroundColor = UIColor(white: 0, alpha: 0.1)
-            return textField
-            textField.addTarget(LoginClass.self, action: #selector(handleTextChange), for: .editingChanged)
-            return textField
-            
-        }()
-        
+//        let usernameTextField: UITextField = {
+//            let textField = UITextField()
+//            textField.translatesAutoresizingMaskIntoConstraints = false
+//            textField.placeholder = "Username"
+//            textField.borderStyle = .roundedRect
+//            textField.backgroundColor = UIColor(white: 0, alpha: 0.1)
+//            return textField
+//            textField.addTarget(LoginClass.self, action: #selector(handleTextChange), for: .editingChanged)
+//            return textField
+//
+//        }()
+//
         let passwordTextField: UITextField = {
             let textField = UITextField()
             textField.translatesAutoresizingMaskIntoConstraints = false
@@ -71,7 +80,7 @@ class LoginClass: UIViewController {
         
         let signUpButton: UIButton = {
             let button = UIButton(type: .system)
-            button.setTitle("Sign Up", for: .normal)
+            button.setTitle("Log In", for: .normal)
             button.setTitleColor(.white, for: .normal)
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
             button.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +93,7 @@ class LoginClass: UIViewController {
     
     func setupTextFields() {
             
-            let stackView = UIStackView(arrangedSubviews: [emailTextField, usernameTextField, passwordTextField, signUpButton])
+            let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, signUpButton])
             stackView.axis = .vertical
             stackView.spacing = 10
             stackView.distribution = .fillEqually
@@ -106,22 +115,26 @@ class LoginClass: UIViewController {
         func validateForm() {
             guard let emailText = emailTextField.text, !emailText.isEmpty else { return }
             guard let passwordText = passwordTextField.text, !passwordText.isEmpty else { return }
-            guard let usernameText = usernameTextField.text, !usernameText.isEmpty else { return }
+           // guard let usernameText = usernameTextField.text, !usernameText.isEmpty else { return }
             
-            startSigningUp(email: emailText, password: passwordText, username: usernameText)
+            startSigningUp(email: emailText, password: passwordText)
         }
         
-        func startSigningUp(email: String, password: String, username: String) {
-            print("Please call any Sign up api for registration: ", email, password, username)
-        }
+    func startSigningUp(email: String, password: String) {
+        //            print("Please call any Sign up api for registration: ", email, password, username)
+        //delegate.log(dataLog: "Log Out")
+        
+        LoginClass.isLoggedIn = true
+        
+    }
     
     @objc func handleTextChange() {
             
             let emailText = emailTextField.text!
-            let usernameText = usernameTextField.text!
+          //  let usernameText = usernameTextField.text!
             let passwordText = passwordTextField.text!
             
-            let isFormFilled = !emailText.isEmpty && !usernameText.isEmpty && !passwordText.isEmpty
+            let isFormFilled = !emailText.isEmpty &&  !passwordText.isEmpty
             
             if isFormFilled {
                 signUpButton.backgroundColor = UIColor.orange
