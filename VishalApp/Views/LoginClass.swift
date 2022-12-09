@@ -125,6 +125,8 @@ class LoginClass: UIViewController {
         //delegate.log(dataLog: "Log Out")
         
         LoginClass.isLoggedIn = true
+        let vc = HomeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     

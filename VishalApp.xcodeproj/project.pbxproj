@@ -38,7 +38,6 @@
 		CAA4D2F629372F8500F24137 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4D2F529372F8500F24137 /* TitleCollectionViewCell.swift */; };
 		CAA4D2F829372FDB00F24137 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4D2F729372FDB00F24137 /* TitlePreviewViewController.swift */; };
 		CAE3B1122939CB4000DE2BD5 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */; };
-		CAE857A82941FE170049AE8B /* LogOutClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE857A72941FE170049AE8B /* LogOutClassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +108,6 @@
 		CACE6C552934847700133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CACE6C5E293484A500133787 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
-		CAE857A72941FE170049AE8B /* LogOutClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutClassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +213,6 @@
 				CAE3B10D2939CB4000DE2BD5 /* TitleTableViewCell.swift */,
 				CA84640C2938C67700D7B64B /* LoginClass.swift */,
 				CA39BC44293EFA3C00B2DF7F /* MyProfileClass.swift */,
-				CAE857A72941FE170049AE8B /* LogOutClassViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -452,7 +449,6 @@
 				CA84640D2938C67700D7B64B /* LoginClass.swift in Sources */,
 				CAA4D2F629372F8500F24137 /* TitleCollectionViewCell.swift in Sources */,
 				45BFDADD292B53DB0017172C /* AppDelegate.swift in Sources */,
-				CAE857A82941FE170049AE8B /* LogOutClassViewController.swift in Sources */,
 				CA49197A292F27F800AAA51E /* NetflixCloneModel.xcdatamodeld in Sources */,
 				45BFDADB292B53DB0017172C /* APICaller.swift in Sources */,
 				45BFDAEB292B54690017172C /* HeroHeaderUIView.swift in Sources */,

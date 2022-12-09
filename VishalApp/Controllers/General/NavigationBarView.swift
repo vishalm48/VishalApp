@@ -28,7 +28,6 @@ class NavigationBarView: UIViewController {
         view.addSubview(profileTable)
         profileTable.delegate = self
         profileTable.dataSource = self
-        
         dataLog()
     }
     
@@ -44,7 +43,7 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource,protocolFo
         print(dataLog)
     }
     
-   
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellTextInProfile.count
@@ -53,24 +52,37 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource,protocolFo
         return 200
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = profileTable.dequeueReusableCell(withIdentifier:NavigationBarCells.identifier, for: indexPath) as? NavigationBarCells
-      
+        
         cell?.backgroundColor = .cyan
         cell?.textLabel?.text = cellTextInProfile[indexPath.row]
         cell?.textLabel?.font = .boldSystemFont(ofSize: 16)
-        
-        
-//        cell?.cellTextProfile = cellTextInProfile[indexPath.row]
         return cell!
+        
+        //        cell?.cellTextProfile = cellTextInProfile[indexPath.row]
+        // return cell!
     }
     
+    func saveLogInfo(){
+
+        let loginDetail = UserDefaults.standard.value(forKey: "Log Out")
+        
+            if loginDetail != nil{
+                self.cellTextInProfile.append( UserDefaults.standard.value(forKey: "Log Out") as! String)
+            
+    }
+}
+
     func dataLog(){
         
         if LoginClass.isLoggedIn == true {
-            cellTextInProfile.append("Log Out")
-            UserDefaults.
-        }else{
-            cellTextInProfile.append("Log In")
+           saveLogOut()
+            //cellTextInProfile.append("Log Out")
+            }
+    else{
+            
+        cellTextInProfile.append("Log In")
         }
         
         profileTable.reloadData()
@@ -101,9 +113,18 @@ extension NavigationBarView:UITableViewDelegate,UITableViewDataSource,protocolFo
         
         if(a.caseInsensitiveCompare(e) == .orderedSame){
       
-            let vc = LogOutClassViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
-           
+            var refreshAlert = UIAlertController(title: "Log Out", message: "Are You Sure to Log Out ? ", preferredStyle: UIAlertController.Style.alert)
+                  
+            refreshAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { (action: UIAlertAction!) in
+                self.navigationController?.popToRootViewController(animated: true)
+            }))
+
+            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+
+                self.navigationController?.popToRootViewController(animated: true)
+            }))
+
+            present(refreshAlert, animated: true, completion: nil)
         }
         
     }
